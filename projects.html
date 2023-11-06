@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;1,700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Finlandica:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="navbar">
+				<div class="logo">
+					<span>Jyothsna Lade</span>
+				</div>
+				<nav>
+					<ul id="MenuItems">
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="about.html">ABOUT</a></li>
+						<li><a href="projects.html">PROJECTS</a></li>
+						<li><a href="skills.html">SKILLS</a></li>
+						<li><a href="experience.html">EXPERIENCE</a></li>
+					</ul>
+				</nav>
+				<img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+			</div>
+		</div>
+	</div>
+	
+	<div class="project-wrapper">
+		<div class="small-container">
+			<div class="row">
+				<div class="col-1">
+					<h1>PROJECTS</h1>
+					<div class="projects">
+						<table>
+							<tr>
+								<td><img src="images/smartattendance.jpeg" class="project-img"></td>
+								<td>
+									<h3>SMART ATTENDANCE</h3>
+									<p>I developed a facial recognition system with HAAR Cascade and AdaBoost, integrated into an attendance system using OpenCV. Demonstrated expertise in machine learning, computer vision, and project management.</p>
+									<a href="https://github.com/JyothsnaLade/Smart-Attendance" class="btn">Project</a>
+								</td>
+							</tr>
+						</table>
+					</div>
+					
+					<div class="projects">
+						<table>
+							<tr>
+								<td><img src="images/hotel management.jpeg" class="project-img"></td>
+								<td>
+									<h3>HOTEL MANAGEMENT SYSYTEM</h3>
+									<p>I meticulously designed and implemented an Entity-Relationship (ER) model for hotels, optimizing operations and customer service. Achieved Third Normal Form, ensuring data integrity. Proficient in complex SQL queries, triggers, and views for efficient automation and user-friendly interfaces.</p>
+									<a href="https://github.com/JyothsnaLade/Hotel-Management-System" class="btn">Project</a>
+								</td>
+							</tr>
+						</table>
+					</div>
+					
+					<div class="projects">
+						<table>
+							<tr>
+								<td><img src="images/mall customer.jpeg" class="project-img"></td>
+								<td>
+									<h3>Mall Customer Segmentation</h3>
+									<p>I applied data mining techniques to analyze Mall customer data, utilizing Python packages like Pandas, Scikit-learn, and Matplotlib. Employed Apriori and FP-Growth algorithms to discover patterns, leading to optimized marketing strategies and enhanced customer engagement.</p>
+									<a href="https://github.com/JyothsnaLade/Mall-Customer-segmentation" class="btn">Project</a>
+								</td>
+							</tr>
+						</table>
+					</div>
+					
+					<div class="projects">
+						<table>
+							<tr>
+								<td><img src="images/image colorization.png" class="project-img"></td>
+								<td>
+									<h3>Image Colorization using cGAN</h3>
+									<p>Created efficient grayscale image colorization with cGAN and U-Net. Utilized ResNet-34 for optimization, Python, PyTorch, TensorFlow, and Keras. Developed hybrid loss functions. Demonstrated expertise in computer vision, neural networks, and transformative image processing.</p>
+									<a href="https://github.com/JyothsnaLade/Image-Colorization-using-cGAN" class="btn">Project</a>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<!-- footer -->
+    <div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col-1">
+					&nbsp;
+				</div>
+				<div class="footer-col-2">
+					<h3>Navigation</h3>
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="about.html">ABOUT</a></li>
+						<li><a href="projects.html">PROJECTS</a></li>
+						<li><a href="skills.html">SKILLS</a></li>
+						<li><a href="experience.html">EXPERIENCE</a></li>
+					</ul>
+				</div>
+				<div class="footer-col-3">
+					<h3>Contact</h3>
+					<h4>Email : abc@gmail.com</h4>
+				</div>
+				<div class="footer-col-4">
+					&nbsp;
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <script>
+		var MenuItems = document.getElementById("MenuItems");
+		MenuItems.style.maxHeight = "0px";
+		function menutoggle() {
+			if(MenuItems.style.maxHeight == "0px") {
+				MenuItems.style.maxHeight = "200px";
+			} else {
+				MenuItems.style.maxHeight = "0px";
+			}
+		}
+	</script>
+</body>
+</html>
